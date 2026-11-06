@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issue Equipment | LabCore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">LAB<span>CORE</span></a>
+<nav>
+<a href="index.html">Dashboard</a>
+<a href="insert.html">Add Equipment</a>
+<a href="list.html">Equipment</a>
+<a class="active" href="issue.html">Issue / Return</a>
+</nav>
+</header>
+
+<main class="page wide">
+<p class="eyebrow">LAB TRANSACTIONS</p>
+<h1>Issue & Return</h1>
+
+<section class="panel">
+<h2>Issue Equipment</h2>
+<form id="issueForm">
+<div class="form-grid">
+<label>Equipment
+<select name="equipment_id" id="issueEquipment" required>
+<option value="">Select Equipment</option>
+</select>
+</label>
+<label>User
+<select name="user_id" id="issueUser" required>
+<option value="">Select User</option>
+</select>
+</label>
+<label>Quantity
+<input type="number" name="quantity" min="1" required>
+</label>
+</div>
+<button class="btn" type="submit">Issue Equipment →</button>
+<p id="issueMessage"></p>
+</form>
+</section>
+
+<section class="panel">
+<h2>Issue Records</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Equipment</th>
+<th>User</th>
+<th>Issue Date</th>
+<th>Return Date</th>
+<th>Quantity</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="issueRows">
+<tr><td colspan="8">Loading...</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<footer>© 2026 LABCORE</footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Equipment | LabCore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">LAB<span>CORE</span></a>
+<nav>
+<a href="index.html">Dashboard</a>
+<a href="insert.html">Add Equipment</a>
+<a class="active" href="list.html">Equipment</a>
+<a href="issue.html">Issue / Return</a>
+</nav>
+</header>
+
+<main class="page">
+<p class="eyebrow">INVENTORY CONTROL</p>
+<h1>Delete Equipment</h1>
+<section class="panel">
+<label>Equipment ID
+<select id="equipmentSelect">
+<option value="">Select Equipment</option>
+</select>
+</label>
+<div id="preview" class="result">Select equipment to preview.</div>
+<button class="btn danger" id="deleteButton">Delete Equipment</button>
+<p id="message"></p>
+</section>
+</main>
+<footer>© 2026 LABCORE</footer>
+<script src="app.js"></script>
+</body>
+</html>

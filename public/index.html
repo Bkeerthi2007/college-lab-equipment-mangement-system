@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LabCore | Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="brand" href="index.html">LAB<span>CORE</span></a>
+    <nav>
+        <a class="active" href="index.html">Dashboard</a>
+        <a href="insert.html">Add Equipment</a>
+        <a href="list.html">Equipment</a>
+        <a href="issue.html">Issue / Return</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <p class="eyebrow">COLLEGE LABORATORY MANAGEMENT</p>
+        <h1>Manage your lab.<br><span>Smarter and better.</span></h1>
+        <p>Track equipment, manage users and maintain issue and return records in one place.</p>
+        <a class="btn" href="insert.html">+ Add Equipment</a>
+        <a class="outline-btn" href="list.html">View Inventory</a>
+    </section>
+
+    <section class="stats">
+        <article class="stat">
+            <p>Total Equipment</p>
+            <h2 id="equipmentCount">—</h2>
+        </article>
+        <article class="stat">
+            <p>Registered Users</p>
+            <h2 id="userCount">—</h2>
+        </article>
+        <article class="stat">
+            <p>Currently Issued</p>
+            <h2 id="issuedCount">—</h2>
+        </article>
+    </section>
+
+    <section class="section">
+        <p class="eyebrow">QUICK ACCESS</p>
+        <h2>Manage your laboratory</h2>
+        <div class="cards">
+            <a class="card" href="insert.html">
+                <h3>＋</h3><h2>Add Equipment</h2>
+                <p>Register new laboratory equipment.</p>
+            </a>
+            <a class="card" href="list.html">
+                <h3>▤</h3><h2>Equipment List</h2>
+                <p>View and manage all equipment.</p>
+            </a>
+            <a class="card" href="issue.html">
+                <h3>↗</h3><h2>Issue Equipment</h2>
+                <p>Record equipment issue and return.</p>
+            </a>
+            <a class="card" href="listone.html">
+                <h3>⌕</h3><h2>Find Equipment</h2>
+                <p>Search equipment using its ID.</p>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>© 2026 LABCORE | College Lab Equipment Management</footer>
+<script src="app.js"></script>
+</body>
+</html>

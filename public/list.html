@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equipment Inventory | LabCore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">LAB<span>CORE</span></a>
+<nav>
+<a href="index.html">Dashboard</a>
+<a href="insert.html">Add Equipment</a>
+<a class="active" href="list.html">Equipment</a>
+<a href="issue.html">Issue / Return</a>
+</nav>
+</header>
+
+<main class="page wide">
+<p class="eyebrow">LAB INVENTORY</p>
+<h1>Equipment Directory</h1>
+<p class="muted">All registered laboratory equipment.</p>
+
+<section class="panel">
+<div class="panel-head">
+<h2>Equipment Records</h2>
+<a class="btn" href="insert.html">+ Add New</a>
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Category</th>
+<th>Total</th>
+<th>Available</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody id="equipmentRows">
+<tr><td colspan="6">Loading...</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<a class="outline-btn" href="listone.html">Find One</a>
+<a class="outline-btn" href="update.html">Update</a>
+<a class="outline-btn" href="delete.html">Delete</a>
+</main>
+<footer>© 2026 LABCORE</footer>
+<script src="app.js"></script>
+</body>
+</html>

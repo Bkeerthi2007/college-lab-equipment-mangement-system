@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Add Equipment | LabCore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">LAB<span>CORE</span></a>
+<nav>
+<a href="index.html">Dashboard</a>
+<a class="active" href="insert.html">Add Equipment</a>
+<a href="list.html">Equipment</a>
+<a href="issue.html">Issue / Return</a>
+</nav>
+</header>
+
+<main class="page">
+<p class="eyebrow">INVENTORY MANAGEMENT</p>
+<h1>Add New Equipment</h1>
+<p class="muted">Enter the laboratory equipment details.</p>
+
+<section class="panel">
+<form id="equipmentForm">
+<div class="form-grid">
+
+<label>Equipment Name *
+<input name="name" required placeholder="Enter equipment name">
+</label>
+
+<label>Category
+<input name="category" placeholder="Electronics / Computer">
+</label>
+
+<label>Total Quantity *
+<input type="number" name="quantity" min="0" required>
+</label>
+
+<label>Available Quantity *
+<input type="number" name="available_quantity" min="0" required>
+</label>
+
+<label>Status
+<select name="status">
+<option>Available</option>
+<option>Unavailable</option>
+<option>Damaged</option>
+</select>
+</label>
+
+</div>
+<button class="btn" type="submit">Save Equipment →</button>
+<p id="message"></p>
+</form>
+</section>
+</main>
+<footer>© 2026 LABCORE</footer>
+<script src="app.js"></script>
+</body>
+</html>
